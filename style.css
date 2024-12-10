@@ -1,0 +1,1149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", "Inter Fallback", sans-serif;
+}
+#outer {
+  height: 100%;
+  width: 100%;
+  /* background-color: gray; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.header {
+  display: flex;
+  background: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 4.5rem; */
+  padding: 2px 12px;
+  box-shadow: 0px 0px 5px gray;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.logo-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+.navbar {
+  display: flex;
+  margin-left: auto;
+  gap: 1rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: #111;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  padding: 12px 10px;
+}
+.navbar button {
+  background: none;
+  border: none;
+  color: #111;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 5px 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar a:hover,
+.navbar button:hover {
+  text-decoration: underline;
+  text-decoration-color: #111;
+  text-underline-offset: 6px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 12px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+  }
+
+  .navbar a,
+  .navbar button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 8px;
+  }
+
+  .logo-img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar {
+    gap: 0.89rem;
+  }
+
+  .navbar a,
+  .navbar button {
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 6px 0;
+  }
+}
+
+/* HEADER SECTION END */
+
+#home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.bg-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bg-home img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: 0px auto;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text-content {
+  background-color: #111;
+  padding: 30px;
+  width: 70vw;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffc000;
+  margin-bottom: 0.575rem;
+}
+
+.main-content p {
+  font-size: 1.25rem;
+  color: #ffffff;
+  max-width: 70%;
+  margin-left: 150px;
+}
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.main-btn a {
+  text-decoration: none;
+  color: white;
+  background-color: #111;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.book-btn {
+  background-color: #10172a;
+  color: #ffffff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.book-btn:hover {
+  background-color: #1f273e;
+}
+
+.call-btn {
+  padding: 10px 15px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.call-span i {
+  margin-right: 7px;
+}
+
+.call-btn:hover {
+  background-color: #eeeaea;
+}
+
+@media (max-width: 1024px) {
+  #home {
+    height: 100vh;
+  }
+
+  .bg-home img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .main-content {
+    padding: 0 10px;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .text-content {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .main-content h1 {
+    font-size: 2rem;
+    overflow-wrap: break-word;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-left: 0;
+    overflow: auto;
+  }
+
+  .main-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book-btn,
+  .call-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .call-btn {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    height: 100vh;
+  }
+
+  .bg-home img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .main-content {
+    padding: 0 10px;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .text-content {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .main-content h1 {
+    font-size: 2rem;
+    overflow-wrap: break-word;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-left: 0;
+    overflow: auto;
+  }
+
+  .main-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book-btn,
+  .call-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .call-btn {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .main-content p {
+    font-size: 0.9rem;
+  }
+
+  .main-btn {
+    gap: 8px;
+  }
+}
+
+/* HOME SECTION END */
+
+#rentals {
+  width: 100%;
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
+
+.rentals-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 6rem;
+  margin: 0 auto;
+}
+
+.our-rentals {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rentals-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+.rentals-content button {
+  border: none;
+}
+
+.rental-card {
+  /* border: 1px solid red; */
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px gray;
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.rental-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rental-img:hover {
+  transform: scale(1.1);
+}
+
+.bike-name {
+  font-size: 0.787rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0.5rem 0;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bike-price {
+  font-size: 0.765rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* RENTAL SECTION END */
+
+#about {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-img {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5rem;
+  align-items: flex-start;
+}
+
+.about-img img {
+  width: 50%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.about-text p {
+  color: #666;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.services h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.service-list i {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.service-list span {
+  color: #666;
+  line-height: 1.4;
+}
+
+.about-content h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.commitment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.commit-cards {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.commit-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.commit-heading h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: #111;
+}
+
+.commit-heading i {
+  font-size: 1.25rem;
+  color: #111;
+}
+
+.commit-para p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .about-img {
+    gap: 3rem;
+  }
+
+  .about-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+
+  .commitment {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-img {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-img img,
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text h1 {
+    font-size: 2.25rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .services h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .commitment {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  #about {
+    padding: 2rem 1rem;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .services h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-list li {
+    gap: 0.75rem;
+  }
+
+  .service-list i {
+    font-size: 1rem;
+  }
+
+  .commit-cards {
+    padding: 1.5rem;
+  }
+
+  .commit-heading h3 {
+    font-size: 1.1rem;
+  }
+
+  .commit-heading i {
+    font-size: 1.1rem;
+  }
+
+  .commit-para p {
+    font-size: 0.9rem;
+  }
+}
+/* ABOUT SECTION END */
+
+#testimonial {
+  background-color: #f2f4f6;
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.testimonial-content {
+  max-width: 800px;
+  height: 10vh;
+  margin: 0 auto;
+}
+
+.testimonial-content blockquote {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  color: #111;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #testimonial {
+    padding: 4rem 1.5rem;
+  }
+
+  .testimonial-content blockquote {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #testimonial {
+    padding: 8rem 2rem;
+  }
+
+  .testimonial-content blockquote {
+    font-size: 1.4rem;
+  }
+
+  .testimonial-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #testimonial {
+    padding: 6rem 1.5rem;
+  }
+
+  .testimonial-content blockquote {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #testimonial {
+    padding: 4rem 1rem;
+  }
+
+  .testimonial-content blockquote {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-content p {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    padding: 10px 0;
+    height: 3vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #testimonial {
+    padding: 3rem 1rem;
+  }
+
+  .testimonial-content blockquote {
+    font-size: 0.85rem;
+  }
+
+  .testimonial-content p {
+    font-size: 0.65rem;
+  }
+
+  .footer {
+    font-size: 0.5rem;
+    padding: 2px 0;
+    height: 2vh;
+  }
+}
+/* TESTIMONIAL SECTION END */
+
+.footer {
+  width: 100vw;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px gray;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: gray;
+}
+
+@media (max-width: 375px) {
+  .footer {
+    height: 3vh;
+    font-size: 4%;
+    padding: 8px 5px;
+  }
+}
+/* Contact Card */
+
+#contact-card {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px);
+  z-index: 10;
+}
+
+.contact-content {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: start;
+  font-family: "Inter", "Inter Fallback", sans-serif;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.card-header p {
+  font-size: 14px;
+  margin: 5px 0 0;
+  color: #666;
+}
+
+#close-card {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contact-info {
+  padding: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.info-item .icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #000;
+}
+
+.info-item span {
+  text-align: left;
+}
+
+#email-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  color: #fff;
+  background-color: #111;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+#email-button:hover {
+  background-color: #0f054b;
+}
+
+@media (max-width: 1024px) {
+  .card-content {
+    width: 50%;
+  }
+
+  .card-header h2 {
+    font-size: 16px;
+  }
+
+  .card-header p {
+    font-size: 13px;
+  }
+
+  .info-item {
+    font-size: 13px;
+  }
+
+  #email-button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    width: 60%;
+  }
+
+  .card-header h2 {
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+
+  .card-header p {
+    font-size: 10px;
+    word-wrap: break-word;
+  }
+
+  .info-item {
+    font-size: 12px;
+  }
+
+  #email-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-header h2 {
+    font-size: 14px;
+  }
+
+  .card-header p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .info-item {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  .info-item .icon {
+    font-size: 10px;
+  }
+
+  #email-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+#bike-card {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(15px);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.bike-content {
+  width: 400px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: start;
+  font-family: "Inter", "Inter Fallback", sans-serif;
+}
+
+.bike-header,
+.bike-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bike-header h2,
+.bike-card-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.bike-card-header p {
+  font-size: 12px;
+  margin: 2px 0 0;
+  color: #111;
+}
+
+#bike-close-card {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.bike-card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.bike-card-image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.bike-price-card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bp {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.pd {
+  color: #555;
+}
+
+.bike-info {
+  padding: 16px;
+}
+
+.bike-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.bike-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #555;
+}
+
+.bike-info-item .bicon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #3cca11;
+  flex-shrink: 0;
+}
+
+.bike-info-item span {
+  text-align: left;
+}
+
+#proceed-btn {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #111;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+#proceed-btn:hover {
+  background-color: #262525;
+}
+
+@media (max-width: 1024px) {
+  .bike-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bike-content {
+    width: 80%;
+  }
+
+  .bike-card-header h2 {
+    font-size: 16px;
+  }
+
+  .bike-card-header p {
+    font-size: 12px;
+  }
+
+  .bike-info-item {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bike-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .bike-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .bike-card-header h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .bike-card-header p {
+    font-size: 12px;
+  }
+
+  #bike-close-card {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  .bike-info-item {
+    font-size: 12px;
+  }
+
+  .bike-info-item .bicon {
+    font-size: 16px;
+  }
+
+  #proceed-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

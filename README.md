@@ -12,7 +12,7 @@ A modern, responsive website for bike and scooty rentals in Darjeeling, West Ben
 
 ## 🚀 Live Demo
 
-Visit the website: [Darjeeling Rides](https://darjeelingrides.in)
+Visit the website: 
 
 ## 📱 Screenshots
 

@@ -12,7 +12,7 @@ A modern, responsive website for bike and scooty rentals in Mussoorie, Uttarakha
 
 ## 🚀 Live Demo
 
-Visit the website: [Mussoorie Rides](https://mussoorierides.com)
+Visit the website: https://mussoorie-bike-rental-project.vercel.app/
 
 ## 🛠️ Technologies Used
 

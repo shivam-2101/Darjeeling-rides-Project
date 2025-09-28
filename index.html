@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Darjeeling Rides - Bike and Scooty Rentals</title>
+    <title>Mussoorie Rides - Bike and Scooty Rentals</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
@@ -19,8 +19,8 @@
       <header class="header">
         <a href="#" id="logo"
           ><img
-            src="https://darjeelingrides.in/images/nextImageExportOptimizer/logo-opt-128.WEBP"
-            alt="Darjeeling-Rides-Logo"
+            src="images/logo.webp"
+            alt="Mussoorie-Rides-Logo"
             class="logo-img"
         /></a>
         <nav class="navbar">
@@ -29,6 +29,25 @@
           <a href="#about" id="nav-about"> About </a>
           <button id="nav-contact">Contact</button>
         </nav>
+        <!-- Mobile Hamburger Menu -->
+        <button
+          class="hamburger-menu"
+          id="hamburger-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <!-- Mobile Navigation Menu -->
+        <nav class="mobile-nav" id="mobile-nav">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#rentals" class="mobile-nav-link">Rentals</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <button id="mobile-nav-contact" class="mobile-nav-contact">
+            Contact
+          </button>
+        </nav>
       </header>
       <!-- HEADER END-->
       <!-- ------------------------------------------------------------------------------------- -->
@@ -36,33 +55,43 @@
       <main class="main">
         <!-- HOME SECTION START -->
         <section id="home">
-          <div class="bg-home">
-            <img
-              src="https://darjeelingrides.in/images/nextImageExportOptimizer/hero-section-opt-1200.WEBP"
-              alt="Bikers riding on the hills."
-            />
-          </div>
-          <div class="main-content">
-            <div class="items">
-              <div class="text-content">
-                <h1>Explore Darjeeling on Two Wheels</h1>
-                <p>
-                  Rent bikes and scooties to discover the beauty of Darjeeling
-                  at your own pace.
-                </p>
+          <div class="hero-wrapper">
+            <div class="hero-background">
+              <img
+                src="images/bg-img.webp"
+                alt="Bikers riding in Mussoorie hills."
+                class="hero-image"
+              />
+              <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+              <div class="hero-badge">
+                <span>🏍️ Premium Rentals</span>
               </div>
-              <div class="main-btn">
-                <a href="#rentals">
-                  <button class="book-btn">
-                    <span class="book-span">Book Now</span>
-                  </button>
+
+              <h1 class="hero-title">Explore Mussoorie on Two Wheels</h1>
+
+              <p class="hero-description">
+                Rent bikes and scooties to discover the beauty of Mussoorie at
+                your own pace.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#rentals" class="cta-primary">
+                  <span>Book Now</span>
+                  <i class="bi bi-arrow-right"></i>
                 </a>
-                <button id="callNow-btn" class="call-btn">
-                  <span class="call-span"
-                    ><i class="bi bi-telephone"></i>Call Now</span
-                  >
+                <button id="callNow-btn" class="cta-secondary">
+                  <i class="bi bi-telephone"></i>
+                  <span>Call Now</span>
                 </button>
               </div>
+            </div>
+
+            <div class="hero-scroll">
+              <span>Scroll to explore</span>
+              <i class="bi bi-chevron-down"></i>
             </div>
           </div>
         </section>
@@ -308,14 +337,11 @@
         <section id="about">
           <div class="about-container">
             <div class="about-img">
-              <img
-                src="https://darjeelingrides.in/images/nextImageExportOptimizer/about-opt-1200.WEBP"
-                alt=""
-              />
+              <img src="images/about-img.webp" alt="Mussoorie landscape" />
               <div class="about-text">
-                <h1>About Darjeeling Rides</h1>
+                <h1>About Mussoorie Rides</h1>
                 <p>
-                  Explore Darjeeling's breathtaking landscapes and vibrant
+                  Explore Mussoorie's breathtaking landscapes and vibrant
                   culture on two wheels. Our well-maintained fleet lets you set
                   your own pace.
                 </p>
@@ -325,15 +351,15 @@
                     <li>
                       <i class="bi bi-geo-alt"></i
                       ><span
-                        >Pickup and Drop from Bagdogra Airport: We'll ensure a
-                        hassle-free start to your Darjeeling adventure.</span
+                        >Pickup and Drop from Dehradun Airport: We'll ensure a
+                        hassle-free start to your Mussoorie adventure.</span
                       >
                     </li>
                     <li>
                       <i class="bi bi-geo-alt"></i
                       ><span
-                        >Explore Beyond Darjeeling: Discover nearby gems like
-                        Kurseong, Siliguri, and other captivating
+                        >Explore Beyond Mussoorie: Discover nearby gems like
+                        Dehradun, Rishikesh, and other captivating
                         destinations.</span
                       >
                     </li>
@@ -391,7 +417,7 @@
         <section id="testimonial">
           <div class="testimonial-content">
             <blockquote>
-              "Renting a bike from Darjeeling Rides was the highlight of our
+              "Renting a bike from Mussoorie Rides was the highlight of our
               trip. The views were incredible, and the service was top-notch!"
             </blockquote>
             <p>Shivam, Adventure Enthusiast</p>
@@ -402,7 +428,7 @@
       <!-- ------------------------------------------------------------------------------------- -->
 
       <footer class="footer">
-        &copy 2024 Darjeeling Rides. All rights reserved.
+        &copy 2024 Mussoorie Rides. All rights reserved.
       </footer>
     </div>
     <!-- ------------------------------------------------------------------------------------- -->
@@ -419,16 +445,13 @@
         </div>
 
         <div class="card-image">
-          <img
-            src="https://darjeelingrides.in/images/nextImageExportOptimizer/contact-us-opt-3840.WEBP"
-            alt="Contact-Card Image"
-          />
+          <img src="images/bg-img.webp" alt="Contact-Card Image" />
         </div>
 
         <div class="contact-info">
           <div class="info-item">
             <span class="icon"><i class="bi bi-geo-alt"></i></span>
-            <span>123 Hill Cart Road, Darjeeling, West Bengal, India</span>
+            <span>123 Mall Road, Mussoorie, Uttarakhand, India</span>
           </div>
           <div class="info-item">
             <span class="icon"><i class="bi bi-telephone"></i></span>
@@ -436,7 +459,7 @@
           </div>
           <div class="info-item">
             <span class="icon"><i class="bi bi-envelope"></i></span>
-            <span>info@darjeelingrides.com</span>
+            <span>info@mussoorierides.com</span>
           </div>
           <div class="info-item">
             <span class="icon"><i class="bi bi-stopwatch"></i></span>
@@ -446,7 +469,7 @@
 
         <button id="email-button">
           <a
-            href="mailto:info@darjeelingrides.com"
+            href="mailto:info@mussoorierides.com"
             target="_blank"
             style="text-decoration: none; color: inherit"
           >
@@ -467,10 +490,7 @@
         </div>
 
         <div class="bike-card-image">
-          <img
-            src="https://darjeelingrides.in/images/nextImageExportOptimizer/fascino-opt-2048.WEBP"
-            alt="Bike-Card Image"
-          />
+          <img src="images/bg-img.webp" alt="Bike-Card Image" />
         </div>
         <div class="bike-price-card">
           <span class="bp">₹600</span> <span class="pd">/ day</span>

@@ -9,6 +9,11 @@ var bikeCloseButton = document.getElementById("bike-close-card");
 var bikeButtons = document.getElementsByClassName("bike-card-btn");
 var proceedButton = document.getElementById("proceed-btn");
 
+// Mobile navigation
+var hamburgerMenu = document.getElementById("hamburger-menu");
+var mobileNav = document.getElementById("mobile-nav");
+var mobileNavContact = document.getElementById("mobile-nav-contact");
+
 // contact card
 function openCard() {
   card.style.display = "flex";
@@ -69,5 +74,44 @@ proceedButton.addEventListener("click", function () {
 window.addEventListener("click", function (event) {
   if (event.target === card) {
     closeCard();
+  }
+});
+
+// Mobile navigation functionality
+function toggleMobileNav() {
+  mobileNav.classList.toggle("active");
+  hamburgerMenu.classList.toggle("active");
+}
+
+function closeMobileNav() {
+  mobileNav.classList.remove("active");
+  hamburgerMenu.classList.remove("active");
+}
+
+// Event listeners for mobile navigation
+if (hamburgerMenu) {
+  hamburgerMenu.addEventListener("click", toggleMobileNav);
+}
+
+if (mobileNavContact) {
+  mobileNavContact.addEventListener("click", function () {
+    closeMobileNav();
+    openCard();
+  });
+}
+
+// Close mobile nav when clicking on nav links
+var mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+mobileNavLinks.forEach(function (link) {
+  link.addEventListener("click", closeMobileNav);
+});
+
+// Close mobile nav when clicking outside
+document.addEventListener("click", function (event) {
+  if (
+    !hamburgerMenu.contains(event.target) &&
+    !mobileNav.contains(event.target)
+  ) {
+    closeMobileNav();
   }
 });

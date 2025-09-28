@@ -36,27 +36,7 @@ Visit the website:
 - **HTML5**: Semantic markup and structure
 - **CSS3**: Modern styling with Flexbox and Grid
 - **JavaScript**: Interactive functionality and DOM manipulation
-- **Bootstrap Icons**: Icon library for UI elements
-- **Google Fonts**: Inter font family for typography
 
-## 📋 Bike Fleet
-
-| Bike Model | Price/Day | Category |
-|------------|-----------|----------|
-| Fascino | ₹600 | Scooty |
-| Burgman Street RC | ₹750 | Scooty |
-| Access 125 | ₹750 | Scooty |
-| TVS Ntorq 125 Race Edition | ₹750 | Scooty |
-| Burgman Street | ₹799 | Scooty |
-| Burgman | ₹799 | Scooty |
-| Ntorq | ₹899 | Scooty |
-| Aprilia SR 125 | ₹900 | Scooty |
-| Aprilia SR 150 | ₹1000 | Scooty |
-| Apache RTR 160 New | ₹1099 | Bike |
-| Xpulse | ₹1099 | Bike |
-| Avenger Street 160 ABS | ₹1099 | Bike |
-| Raider 125 | ₹1099 | Bike |
-| Avenger Street 220 | ₹1100 | Bike |
 
 ## 🎯 Key Features
 
@@ -106,48 +86,4 @@ Darjeeling-rides-Project/
 └── README.md           # Project documentation
 ```
 
-## 🎨 Design Highlights
 
-- **Color Scheme**: Professional black, white, and orange theme
-- **Typography**: Inter font family for modern look
-- **Layout**: CSS Grid and Flexbox for responsive design
-- **Animations**: Smooth hover effects and transitions
-- **Icons**: Bootstrap Icons for consistent iconography
-
-## 📞 Contact Information
-
-- **Address**: 123 Hill Cart Road, Darjeeling, West Bengal, India
-- **Phone**: +91 1234567890
-- **Email**: info@darjeelingrides.com
-- **Hours**: Open daily: 8:00 AM - 8:00 PM
-
-## 🔧 Customization
-
-To customize the website:
-
-1. **Update bike information**: Modify the bike data in `index.html`
-2. **Change styling**: Edit `style.css` for colors, fonts, and layout
-3. **Add functionality**: Extend `script.js` for new features
-4. **Update contact info**: Change contact details in the contact modal
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👨‍💻 Author
-
-**Shivam Shukla**
-- GitHub: [@shivam-2101](https://github.com/shivam-2101)
-- Portfolio: [portfolio.shivam](https://github.com/shivam-2101/portfolio.shivam)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/shivam-2101/Darjeeling-rides-Project/issues).
-
-## ⭐ Show your support
-
-Give a ⭐️ if this project helped you!
-
----
-
-**Made with ❤️ for Darjeeling tourism**
